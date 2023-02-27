@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans';
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+	padding-top: 99px;
+}
+
+.btn_tab {
+	display: inline-block;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	text-transform: uppercase;
+	margin-bottom: -1px;
+	padding: 10px 82.5px;
+
+}
+
+.tab_st {
+	border: 1px solid #C6CBCD;
+	border-radius: 5px 5px 0px 0px;
+	border-bottom: none;
+	background: white;
+}
+
+.tab_content {
+	border: 1px solid #C6CBCD;
+	font-size: 0;
+}
+
+.tab_name {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 41px;
+	margin-bottom: 57px;
+}
+
+.tab_text {
+	display: inline-block;
+	width: 570px;
+	margin: 54px 27px 54px 100px;
+	vertical-align: top;
+}
+
+P {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	padding: 0 10px 0 0;
+}
+
+.tab_discription_box {
+	margin-bottom: 27px;
+}
+
+.tab_discription_st {
+	margin-bottom: 20px;
+}
+
+img {
+	display: block;
+	/* float: right; */
+}
+
+.img_tab {
+	display: inline-block;
+	text-align: right;
+}
+
+.download_btn {
+	display: inline-block;
+	width: 270px;
+	height: 58px;
+	background: #EC7979;
+	text-align: center;
+	border: none;
+	color: white;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+}
