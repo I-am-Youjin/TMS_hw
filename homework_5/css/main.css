@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Raleway';
+}
+
+.wrapper {
+	width: 1200px;
+	margin: 0 auto;
+	/* padding: 0 15px; */
+}
+
+.name {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 42px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 54px;
+	padding-top: 104px;
+}
+
+.line {
+	background-color: #EC7979;
+	height: 1px;
+	width: 170px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+
+.discription {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	color: #86878B;
+	text-align: center;
+	margin-bottom: 67px;
+}
+
+.customers_box {
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 64px;
+}
+
+.customer_box {
+	width: 370px;
+	margin: 15px;
+}
+
+.customer_discription {
+	text-align: center;
+	color: #86878B;
+	background: #E2E2E2;
+	min-height: 170px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	margin-bottom: 66px;
+	padding: 38px 24px;
+	border-radius: 10px;
+}
+
+.photo_box {
+	display: flex;
+	flex-direction: row;
+}
+
+.customer_name_box {
+	margin-left: 30px;
+}
+
+.customer_name {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 33px;
+	margin-bottom: 15px;
+}
+
+.proffesion {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	color: #000000
+}
