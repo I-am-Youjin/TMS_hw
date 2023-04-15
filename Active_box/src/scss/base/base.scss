@@ -1,0 +1,18 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	font-family: 'Raleway';
+}
+
+.wrapper {
+	max-width: 1210px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+html {
+	scroll-behavior: smooth;
+}

@@ -1,0 +1,87 @@
+@import"../variables/variables.scss";
+
+.section-work {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+
+	.work-img-box {
+		display: flex;
+	}
+
+	.work-img {
+		width: 100%;
+	}
+
+	.work-link {
+		position: relative;
+	}
+
+	.work-text-box {
+		position: absolute;
+		transition: .3s;
+		text-align: center;
+		opacity: 0;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		&:hover {
+			opacity: 1;
+			background-color: $work_hover_color ;
+		}
+
+		&:active {
+			background-color: $work_active_color ;
+		}
+
+		.work-title_hover {
+			font-weight: 900;
+			font-size: $h4;
+			line-height: 28px;
+			text-transform: uppercase;
+			color: #FFFFFF;
+			margin-bottom: 10%;
+
+		}
+
+		.work-discription_hover {
+			font-weight: 400;
+			font-size: $h5;
+			line-height: 21px;
+			color: #FFFFFF;
+		}
+
+	}
+
+}
+
+@media(max-width:1024px) {
+	.section-work {
+		.work-text-box {
+			.work-title_hover {
+				font-weight: 900;
+				font-size: $h5;
+				line-height: 21px;
+
+			}
+
+			.work-discription_hover {
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 16px;
+				color: #FFFFFF;
+			}
+		}
+	}
+}
+
+@media(max-width:610px) {
+	.section-work {
+		grid-template-columns: 1fr 1fr;
+	}
+}

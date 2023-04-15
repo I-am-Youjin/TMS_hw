@@ -1,0 +1,73 @@
+@import "../buttons/btn.scss";
+
+.download-content {
+	padding: 85px 0 114px;
+
+	.download--title {
+		font-weight: 500;
+		font-size: $h3;
+		line-height: 35px;
+		text-align: center;
+		margin-bottom: 22px;
+	}
+
+	.download--discription {
+		font-weight: 700;
+		font-size: $h5;
+		line-height: 21px;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+
+	.btn {
+		@extend %btn;
+
+		&:hover {
+			@extend %btn__hover;
+		}
+
+		&:active {
+			@extend %btn__active;
+		}
+
+	}
+}
+
+@media(max-width:1024px) {
+	.download-content {
+		padding: 80px 0 78px;
+
+		.download--title {
+			font-size: $h4;
+			line-height: 28px;
+			margin-bottom: 20px;
+		}
+
+		.download--discription {
+			font-size: 14px;
+			line-height: 16px;
+			margin-bottom: 43px;
+		}
+
+		.btn {
+			font-size: $h5 ;
+		}
+	}
+
+
+}
+
+@media(max-width:690px) {
+	.download-content {
+		.btn {
+			width: 100%;
+		}
+	}
+}
+
+@media(max-width:500px) {
+	.download-content {
+		padding: 40px 0 45px;
+
+	}
+}

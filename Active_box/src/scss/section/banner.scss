@@ -1,0 +1,119 @@
+@import "../buttons/btn.scss";
+
+.banner {
+	position: relative;
+	background-image: url("../img/banner-img.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	&::after {
+		position: absolute;
+		content: "";
+		background-color: $banner_bg_color;
+		height: 100%;
+		width: 100%;
+		left: 0;
+		top: 0;
+	}
+
+	&--box {
+		position: relative;
+		z-index: 1;
+		padding: 129px 0 120px;
+
+
+		h1 {
+			text-align: center;
+			font-weight: 900;
+			font-size: $h1;
+			line-height: 75px;
+			text-transform: uppercase;
+			color: #fff;
+
+		}
+
+		p {
+			font-weight: 400;
+			font-size: $h4;
+			line-height: 28px;
+			text-align: center;
+			padding: 0 80px;
+			margin: 32px 0 82px;
+			color: #fff;
+		}
+
+		.btn {
+			@extend %btn;
+
+			&:hover {
+				@extend %btn__hover;
+			}
+
+			&:active {
+				@extend %btn__active;
+			}
+		}
+	}
+}
+
+@media (max-width:1024px) {
+	.banner {
+		&--box {
+			padding: 156px 0 126px;
+
+			h1 {
+				font-size: 48px;
+				line-height: 56px;
+			}
+
+			p {
+				font-weight: 400;
+				font-size: $h5;
+				line-height: 21px;
+				text-align: center;
+				padding: 0 110px;
+				margin: 61px 0 89px;
+			}
+		}
+	}
+}
+
+@media (max-width:690px) {
+	.banner {
+
+		&--box {
+
+			.btn.banner--btn {
+				width: 100%;
+			}
+
+		}
+	}
+}
+
+@media (max-width:610px) {
+	.banner {
+
+		&--box {
+			padding: 106px 0 52px;
+
+			.btn.banner--btn {
+				width: 100%;
+			}
+
+
+			h1 {
+				font-size: $h2;
+				line-height: 42px;
+			}
+
+			p {
+				font-size: 14px;
+				line-height: 16px;
+				padding: 0;
+				margin: 32px 0 49px;
+			}
+		}
+	}
+}

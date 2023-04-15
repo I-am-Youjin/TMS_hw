@@ -1,0 +1,85 @@
+.testimotionals-content {
+	display: flex;
+	align-items: center;
+	background-color: $testim-color;
+
+	.testimotionals-img-box {
+		display: flex;
+		width: 50%;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.text-box {
+		width: 50%;
+		padding: 0 8% 0 11%;
+
+		p {
+			color: #fff;
+		}
+
+		.title {
+			font-family: 'Cardo';
+			font-style: italic;
+			font-weight: 400;
+			font-size: $h2;
+			line-height: 49px;
+			text-transform: capitalize;
+		}
+
+		.discription {
+			margin-top: 7px;
+			font-weight: 700;
+			font-size: $h6;
+			line-height: 15px;
+		}
+
+	}
+}
+
+@media(max-width:1024px) {
+	.testimotionals-content {
+
+		.text-box {
+
+			.title {
+				font-size: $h4;
+				line-height: 32px;
+			}
+
+			.discription {
+				margin-top: 7px;
+				font-size: 12px;
+				line-height: 14px;
+			}
+		}
+	}
+}
+
+@media(max-width:690px) {
+	.testimotionals-content {
+		.testimotionals-img-box {
+			display: flex;
+			width: 100%;
+		}
+
+		.text-box {
+			width: 100%;
+			padding: 32px 20px 95px;
+			text-align: center;
+
+			.title {
+				font-size: $h4;
+				line-height: 32px;
+			}
+
+			.discription {
+				margin-top: 7px;
+				font-size: 12px;
+				line-height: 14px;
+			}
+		}
+	}
+}

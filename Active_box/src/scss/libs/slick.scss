@@ -1,0 +1,83 @@
+@import "../../../node_modules/slick-carousel/slick/slick.scss";
+
+.slider {
+	margin-bottom: 74px;
+}
+
+.slick-slide {
+	.slider__item {
+		display: flex !important;
+	}
+}
+
+.slick-dots {
+	flex-direction: row;
+	justify-content: space-between;
+	max-width: 170px;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	bottom: -44px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	gap: 25px;
+
+	li {
+		display: flex;
+
+	}
+
+	button {
+		padding: 0;
+		border: 1px solid $testim-color;
+		background-color: #fff;
+		cursor: pointer;
+
+		border-radius: 50%;
+		width: 14px;
+		height: 14px;
+
+		font-size: 0;
+
+		&:hover,
+		&:focus {
+			opacity: 0.8;
+		}
+	}
+}
+
+.slick-active {
+	button {
+		background-color: $testim-color;
+	}
+
+}
+
+@media(max-width:1024px) {
+	.slider {
+		margin-bottom: 47px;
+	}
+
+	.slick-dots {
+		bottom: -33px;
+		gap: 20px;
+
+		button {
+			width: 9px;
+			height: 9px;
+		}
+	}
+}
+
+
+@media(max-width:690px) {
+	.slick-slide {
+		.slider__item {
+			flex-direction: column;
+		}
+	}
+
+
+}
